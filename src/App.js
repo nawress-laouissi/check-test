@@ -1,29 +1,26 @@
 
 import React from 'react'
 import './App.css'
-import Profile from './Components/Profile'
+import Profile from './Component/Profile/Profile'
+import Button from './Component/Profile/Button';
 
- 
  function App() {
   const fullname = "sdiri oumayma";
-  const bio = "web";
-  const profession = "student"
-
-  const handleName = function (name) {
-    alert(`my name is ${name}`);
-  }
+  const bio = "learning web development to improve my skills";
+  const profession = "IT student"
+  const handleName=(name)=>alert(name)
    return (
-     <div>
-    <Profile fullname={fullname}
-             bio={bio} 
-             profession={profession}
-             handleName={handleName} />
-      <img src="https://blankhearts.com/wp-content/uploads/2022/10/girl-whatsapp-dp-15.jpg" alt='profile' > </img>
-     
+     <div style={{textAlign: "center"}}>
+    <Profile fullname={fullname} bio={bio} profession={profession}> 
+    <img src='https://blankhearts.com/wp-content/uploads/2022/10/girl-whatsapp-dp-15.jpg' alt='profile pic'></img>
+    </Profile>
+   
+     <Button handleName={handleName} fullname="sdiri oumayma" />
       </div>
     
 
    );
  }
- 
+
  export default App
+ 
