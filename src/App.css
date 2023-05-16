@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+img{
+  clip-path:ellipse(30% 30%);
+  align-items: center;
+  
+
+}
+h1{  text-decoration-style : solid;
+}
